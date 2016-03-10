@@ -19,6 +19,6 @@ libaio
 RUN apk add php7
 RUN apk add php7-opcache
 
-RUN ln -s /usr/bin/php7 /usr/bin/php \
+RUN ln -fs /usr/bin/php7 /usr/bin/php
 
 ADD php.ini /etc/php7/
