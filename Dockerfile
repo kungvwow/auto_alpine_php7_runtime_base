@@ -3,7 +3,7 @@ FROM cmptech/auto_alpine_edge
 
 Maintainer Wanjo Chan ( http://github.com/wanjochan/ )
 
-#COPY repositories /etc/apk/
+COPY repositories /etc/apk/
 #RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && apk update && apk upgrade
 
 RUN apk update && apk upgrade 
