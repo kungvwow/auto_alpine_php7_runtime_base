@@ -9,6 +9,7 @@ RUN echo "http://nl.alpinelinux.org/alpine/latest-stable/main" > /etc/apk/reposi
 && apk add php7 \
 && apk add php7-opcache \
 && ln -fs /usr/bin/php7 /usr/bin/php \
-&& php.ini /etc/php7/ \
 && rm -rf /var/cache/ \
 && rm -rf /tmp/*
+
+ADD php.ini /etc/php7/
