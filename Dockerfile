@@ -1,5 +1,7 @@
 FROM alpine:edge
 
+#Project: https://github.com/cmptech/auto_alpine_php7_runtime_base/
+
 Maintainer Wanjo Chan ( http://github.com/wanjochan/ )
 
 RUN echo "http://nl.alpinelinux.org/alpine/latest-stable/main" > /etc/apk/repositories \
